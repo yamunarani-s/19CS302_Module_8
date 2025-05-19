@@ -7,3 +7,13 @@ This challenge requires you to print Hello Saveetha! on a single line, and then 
 Saveetha
 
 The required output is: Hello, Saveetha! C Programming
+#include <stdio.h>
+
+int main() {
+    char input[100];
+    printf("Hello Saveetha!\n");
+    fgets(input, sizeof(input), stdin);
+    printf("%s", input);
+
+    return 0;
+}
