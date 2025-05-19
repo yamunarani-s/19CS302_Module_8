@@ -20,3 +20,25 @@ If n>49 print Greater than 49.
 ## Sample Output
 
 forty one
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    if (n < 41) {
+        return 0;
+    }
+    if (n > 49) {
+        printf("Greater than 49\n");
+        return 0;
+    }
+    char *tens = "forty";
+    char *ones[] = {
+        "one", "two", "three", "four", "five",
+        "six", "seven", "eight", "nine"
+    };
+    printf("%s %s\n", tens, ones[n - 41]);
+    return 0;
+}
+outputr:
+forty one
